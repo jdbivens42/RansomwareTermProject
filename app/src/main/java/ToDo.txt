@@ -1,0 +1,11 @@
+Goals:
+Separate Locker Service from ClickJacker; two similar but fundamentally different needs
+On enabled (admin) should destroy clickjacker
+Polish up ClickJacker
+    -Keep Clickjacker up until admin enabled
+    -if menu has changed, bring up admin screen
+If admin deactivated, clickjack again, different message
+!Unlock without removing password
+!!Fake ransom request
+Encrpyt files / sd card
+

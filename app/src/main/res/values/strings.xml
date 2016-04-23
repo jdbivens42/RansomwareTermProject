@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Battery_Wizard</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_admin_description">Access to your battery\'s voltage log is requried to continue. Press accept.</string>
+</resources>
