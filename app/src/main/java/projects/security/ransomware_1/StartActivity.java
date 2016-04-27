@@ -112,7 +112,15 @@ public class StartActivity extends AppCompatActivity {
         Toast.makeText(StartActivity.this,"Returned", Toast.LENGTH_SHORT).show();
     }
 
-    //DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
+    //New addition
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != RESULT_OK) {
+            AdminPayload.beginLock(this,null,null,0,"LOCK");
+        }
+    }
+
+        //DevicePolicyManager dpm = (DevicePolicyManager) getSystemService(Context.DEVICE_POLICY_SERVICE);
     //dpm.resetPassword("2222", 0);
 
 
